@@ -1,19 +1,34 @@
 ::-webkit-scrollbar {
   display: none; }
 
-body .menuContainer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em 2em 0 0; }
-  body .menuContainer img {
-    height: 2.5em; }
-body .historyContainer {
-  height: 100vh;
-  display: flex;
-  align-items: center; }
-  body .historyContainer .history {
-    padding: 2em;
-    line-height: 1.5;
-    font-family: sans-serif; }
+body {
+  background-color: #fff;
+  color: #4a4a4a;
+  font-family: "Courier New", Courier, monospace; }
+  body .menuContainer {
+    display: flex;
+    justify-content: flex-end; }
+    body .menuContainer img {
+      padding: 1em 2em 0 0;
+      height: 2.5em; }
+    body .menuContainer .fullMenuContainer {
+      background-color: #005397;
+      width: 100vw;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; }
+      body .menuContainer .fullMenuContainer .fullMenu {
+        padding-bottom: 8em; }
+        body .menuContainer .fullMenuContainer .fullMenu .menuItem {
+          padding-bottom: 1em; }
+  body .historyContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center; }
+    body .historyContainer .history {
+      padding: 2em;
+      line-height: 1.5; }
 
 /*# sourceMappingURL=main.css.map */
