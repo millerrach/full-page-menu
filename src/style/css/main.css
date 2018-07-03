@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+  display: none; }
+
+body .menuContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 2em 0 0; }
+  body .menuContainer img {
+    height: 2.5em; }
+body .historyContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+  body .historyContainer .history {
+    padding: 2em;
+    line-height: 1.5;
+    font-family: sans-serif; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+$blue: #005397;
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    .menuContainer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em 2em 0 0;
+        img {
+            height: 2.5em;
+        }
+    }
+  .historyContainer {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    .history {
+      padding: 2em;
+      line-height: 1.5;
+      font-family: sans-serif;
+    }
+  }
+}
