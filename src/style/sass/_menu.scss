@@ -1,0 +1,30 @@
+.menuContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .hamburgOrClose {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      padding-right: 2em;
+      height: 2.5em;
+    }
+  }
+  .dropMenuContainer {
+    background-color: $blue;
+    width: 100vw;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .dropMenu {
+      padding-bottom: 8em;
+      .dropItem {
+        padding-bottom: 1em;
+      }
+    }
+  }
+}

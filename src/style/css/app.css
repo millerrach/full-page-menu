@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  background-color: #fff;
+  color: #4a4a4a;
+  font-family: "Courier New", Courier, monospace; }
+  body .app {
+    position: absolute; }
+    body .app .historyContainer {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2em;
+      line-height: 1.5; }
+
+.menuContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .menuContainer .hamburgOrClose {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .menuContainer .hamburgOrClose img {
+      padding-right: 2em;
+      height: 2.5em; }
+  .menuContainer .dropMenuContainer {
+    background-color: #005397;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .menuContainer .dropMenuContainer .dropMenu {
+      padding-bottom: 8em; }
+      .menuContainer .dropMenuContainer .dropMenu .dropItem {
+        padding-bottom: 1em; }
+
+/*# sourceMappingURL=app.css.map */

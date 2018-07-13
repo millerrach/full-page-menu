@@ -1,0 +1,26 @@
+$blue: #005397;
+$white: #fff;
+$darkGray: #4a4a4a;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: $white;
+  color: $darkGray;
+  font-family: "Courier New", Courier, monospace;
+  .app {
+    position: absolute;
+    .historyContainer {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2em;
+      line-height: 1.5;
+    }
+  }
+}
+
+@import "menu";

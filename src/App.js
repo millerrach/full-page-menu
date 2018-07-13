@@ -1,22 +1,15 @@
 import React, { Component } from "react";
-import "./style/css/main.css";
 import Menu from "./components/Menu";
 
 class App extends Component {
   state = {
-    hidden: false,
+    hidden: false
   };
-  hide() {
-    console.log(this.state);
-    // this.setState({ hidden: !this.state.hidden });
-  }
+
   render() {
-    {console.log(this.state.hidden)}
     return (
-      <div className="App">
-        <Menu hide={this.hide} 
-        style={this.state.hidden? { display : 'none' } : null}
-        />
+      <div className="app">
+        <Menu />
         <div className="historyContainer">
           <p className="history">
             Since 2010 or so, a gastronomic revolution has been taking place in
