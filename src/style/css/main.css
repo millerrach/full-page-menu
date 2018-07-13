@@ -13,8 +13,7 @@ body {
       height: 2.5em; }
     body .menuContainer .fullMenuContainer {
       background-color: #005397;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
       color: #fff;
       display: flex;
       justify-content: center;
@@ -26,9 +25,9 @@ body {
   body .historyContainer {
     height: 100vh;
     display: flex;
-    align-items: center; }
-    body .historyContainer .history {
-      padding: 2em;
-      line-height: 1.5; }
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    line-height: 1.5; }
 
 /*# sourceMappingURL=main.css.map */

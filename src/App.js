@@ -1,27 +1,34 @@
 import React, { Component } from "react";
 import "./style/css/main.css";
-import Menu from './components/Menu';
+import Menu from "./components/Menu";
 
 class App extends Component {
+  state = {
+    hidden: false,
+  };
+  hide() {
+    console.log(this.state);
+    // this.setState({ hidden: !this.state.hidden });
+  }
   render() {
+    {console.log(this.state.hidden)}
     return (
       <div className="App">
-        <Menu />
+        <Menu hide={this.hide} 
+        style={this.state.hidden? { display : 'none' } : null}
+        />
         <div className="historyContainer">
           <p className="history">
-            The city of Budapest was officially created on 17 November 1873 by
-            the merging of the neighboring cities of Pest, Buda and Óbuda, with
-            smaller outskirt towns amalgamated into Greater Budapest in 1950.
-            Its origins can be traced to the Celtic people who occupied the
-            plains of Hungary from the 4th century BC, until its conquest by the
-            Roman Empire who established the fortress and town of Aquincum on
-            the site of today's Budapest around AD 100, and the subsequent
-            arrival of the Hungarian people. Their conquest of the Carpathian
-            Basin started at the end of the 9th century and the Kingdom of
-            Hungary established on the year 1000. From around 1300 to the
-            incorporation of 1873, Buda have been the capital of the kingdom for
-            five periods of less than a century each
+            Since 2010 or so, a gastronomic revolution has been taking place in
+            Budapest. New ingredients, inventive recipes, and international
+            dishes are entering the mainstream that was previously dominated by
+            carbs- and meat-heavy Hungarian staples like beef stew. Four
+            Michelin-starred restaurants in Budapest (more than in Prague and
+            Warsaw) are proof of this development. But those who're looking to
+            taste traditional Hungarian dishes or find the most buzzing
+            restaurants have also plenty to choose from.
           </p>
+          <p>offbeatbudapest.com</p>
         </div>
       </div>
     );
