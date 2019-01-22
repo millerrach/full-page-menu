@@ -1,25 +1,26 @@
 .menuContainer {
   width: 100%;
   position: absolute;
-  top: 0;
-  right: 0;
   .hamburgOrClose {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
     img {
-      padding-right: 2em;
+      padding: 2em 2em 0 0;
       height: 2.5em;
     }
   }
   .dropMenuContainer {
+    position: relative;
+    z-index: 1;
     background-color: $blue;
     width: 100vw;
+    height: 100vh;
     color: $white;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transition: all 1s ease-in;
     .dropMenu {
       padding-bottom: 8em;
       .dropItem {
